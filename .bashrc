@@ -1,5 +1,11 @@
-PS1='\u@\w \$ '
-alias ls='ls -G'
+# .bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+PS1='[\u@\h \w ]$ '
+
+alias ls='ls -G --color=auto'
 
 # history handling
 #
